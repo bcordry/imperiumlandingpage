@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/double empleon icon.png" type="image/png">
+
+<!-- Mobile and theme color -->
+<meta name="theme-color" content="#3c9">
+
+<!-- Social sharing (Open Graph) -->
+<meta property="og:title" content="Emerald Imperium">
+<meta property="og:description" content="A new adventure in Hoenn with Sinnoh leaders, new rivals, and more!">
+<meta property="og:image" content="https://yourdomain.com/assets/images/emerald_imperium_text_logo.png"> <!-- Update with real URL -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourdomain.com/"> <!-- Update with real URL -->
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Emerald Imperium">
+<meta name="twitter:description" content="A new adventure in Hoenn with Sinnoh leaders, new rivals, and more!">
+<meta name="twitter:image" content="https://yourdomain.com/assets/images/emerald_imperium_text_logo.png">
+
+
+  <meta charset="UTF-8">
+  <title>Emerald Walkthrough</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/dark.css">
+  <link rel="stylesheet" href="css/walkthroughstyles.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+  <div class="pokeball-icon">
+    <img src="assets/images/empoleon rolling sprite.gif" alt="Rolling Menu">
+    <nav class="dropdown-menu">
+      <a href="index.html">Home</a>
+      <a href="game-info.html">Game Info</a>
+      <a href="patch.html">Patch</a> 
+      <a href="walkthrough.html">Walkthrough</a>
+      <a href="https://dex.emeraldimperium.net/">Pokédex</a>
+      <a href="https://eidex.specker.workers.dev/">World Map</a>  
+      <a href="hall-of-fame.html">Hall of Fame</a> 
+      <a href="#">Trainers</a> <!-- Add link when available -->
+      <a href="#">Documentation</a> <!-- Add link when available -->
+    </nav>
+  </div>
+
+   <div class="darkmode-toggle-container">
+    <img src="assets/images/morpekolightsmall.png" alt="Light mode" class="toggle-icon toggle-icon-left">
+    <label class="switch">
+      <input type="checkbox" id="darkModeSlider">
+      <span class="slider"></span>
+    </label>
+    <img src="assets/images/morpekodarksmall.png" alt="Dark mode" class="toggle-icon toggle-icon-right">
+  </div>
+
+</header>
+  
+<div class="walkthrough-intro">
+  The region of Hoenn has changed in Imperium, including the Sinnoh leaders and more rivals coming to test your might; the route through the game is altered. Use the following checklists, broken down by badge, to see how you can progress through the game knowing where each new fight is!
+</div>
+
+  <div class="tab-container">
+    <button class="tab-button roxanne-tab active" data-tab="roxanne">Roxanne Split</button>
+    <button class="tab-button brawly-tab" data-tab="brawly">Brawly Split</button>
+    <button class="tab-button wattson-tab" data-tab="wattson">Wattson Split</button>
+    <button class="tab-button flannery-tab" data-tab="flannery">Flannery Split</button>
+    <button class="tab-button norman-tab" data-tab="norman">Norman Split</button>
+    <button class="tab-button winona-tab" data-tab="winona">Winona Split</button>
+    <button class="tab-button tate-tab" data-tab="tate">Tate & Liza Split</button>
+    <button class="tab-button juan-tab" data-tab="juan">Juan Split</button>
+    <button class="tab-button elite-tab" data-tab="elite">Elite 4 Split</button>
+  </div>
+
+  <div class="reset-container">
+    <button class="reset-button" onclick="resetCheckboxes()">Reset Progress</button>
+  </div>
+
+  <div class="tab-contents">
+    <div class="tab-content roxanne-content active" id="roxanne">
+      <ul class="checklist">
+  <li><strong>Littleroot Town</strong></li>
+  <li><label><input type="checkbox"> Go upstairs in the first house you encounter and set your clock</label></li>
+  <li><label><input type="checkbox"> Go to the house directly next door, go upstairs and talk to your rival</label></li>
+  <li><label><input type="checkbox"> Go South to Professor Birch's Lab and acquire your starter</label></li>
+  <li><label><input type="checkbox"> Head North to Route 103</label></li>
+
+  <li><strong>Route 103</strong></li>
+  <li><label><input type="checkbox"> Fight your Rival (northern side of Route 103)</label><br></li>
+  <li></li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; Rival team listed under “Rivals” tab</span></li>
+
+  <li><strong>Littleroot Town</strong></li>
+  <li><label><input type="checkbox"> Return to Professor Birch’s Lab to get your Pokedex.</label><br></li>
+  <li><label><input type="checkbox"> Head North to Oldale Town and then West to Petalburg City</label></li>
+
+  <li><strong>Petalburg City</strong></li>
+  <li><label><input type="checkbox"> Speak with the Fisherman at the northern lake to receive the Old Rod</label><br></li>
+  <li><label><input type="checkbox"> Go to the Gym and speak with Wally to get the catch tutorial</span><br></li>
+  <li><label><input type="checkbox"> Go West to Petalburg Woods</span><br></li>
+
+  <li><strong>Petalburg Woods</strong></li>
+  <li><label><input type="checkbox"> Halfway through the forest, you’ll fight the Team Aqua Grunt</label><br></li>
+  <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Team Aqua” tab</span><br></li>
+  <li><label><input type="checkbox"> Go North to Route 104</label><br></li>
+
+  <li><strong>Route 104</strong></li>
+  <li><label><input type="checkbox"> Fight Dawn at the northern end of the bridge</label><br></li>
+  <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; “Rivals” tab</span></li>
+  <li><label><input type="checkbox"> Continue North to Rustboro City and then East to Route 116</label><br></li>
+
+  <li><strong>Route 116</strong></li>
+  <li><label><input type="checkbox"> Go all the way East through Route 116 and fight Roark</label></li>
+  <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; “Sinnoh Leaders” tab</span></li>
+  <li><label><input type="checkbox"> Return to Rustboro City</label></li>
+
+  <li><strong>Rustboro City</strong></li>
+  <li><label><input type="checkbox"> Clear the Rustboro gym and fight Roxanne</label></li>
+  <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; “Hoenn Leaders” tab</span></li>
+  <li><label><input type="checkbox"> Speak with the man in the house on the Southwest of town to receive HM “Cut”</label></li>
+  <li><label><input type="checkbox"> Leave Eastward again toward Rusturf Tunnel</label></li>
+</ul>
+
+    </div>
+
+    <div class="tab-content brawly-content" id="brawly">
+      <ul class="checklist">
+        <li><strong>Rusturf Tunnel</strong></li>
+        <li><label><input type="checkbox"> Fight the Aqua Grunt</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; “Team Aqua” tab</span></li>
+        <li><label><input type="checkbox"> Return to Rustboro City</label></li>
+
+        <li><strong>Rustboro City</strong></li>
+        <li><label><input type="checkbox"> Your rival will fight you when you exit the city to the South</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; “Rivals” tab</span></li>
+        <li><label><input type="checkbox"> You can now optionally fight Gardenia at any time, in Petalburg Woods</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; “Sinnoh Leaders” tab</span></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; If you wait until after you've defeated Wattson, she'll have a strong team!</span></li>
+        <li><label><input type="checkbox"> Head south to through Petalburg Woods to Route 104</label></li>
+
+        <li><strong>Route 104</strong></li>
+        <li><label><input type="checkbox"> Speak with Mr. Briney to have him sail you to Dewford Town</label></li>
+
+        <li><strong>Dewford Town</strong></li>
+        <li><label><input type="checkbox"> Head North of town to Granite Cave</label></li>
+
+        <li><strong>Granite Cave</strong></li>
+        <li><label><input type="checkbox"> Speak with the first Hiker inside the cave to get HM “Flash”</label></li>
+        <li><label><input type="checkbox"> Go through the cave to the top floor to speak with Steven and deliver the letter</label></li>
+        <li><label><input type="checkbox"> You may now optionally return to Rustboro City to get some evolution stones from the Devon Corp CEO</label></li>
+
+        <li><strong>Dewford Town</strong></li>
+        <li><label><input type="checkbox"> Navigate the gym and defeat Leader Brawly</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; Hoenn Leaders tab</span></li>
+        <li><label><input type="checkbox"> Talk to Mr. Briney and sail to Slateport City</label></li>
+      </ul>
+    </div>
+
+    <div class="tab-content wattson-content" id="wattson">
+      <ul class="checklist">
+        <li><strong>Slateport City</strong></li>
+        <li><label><input type="checkbox"> Go to the building south of the museum (where the grunts are blocking entrance to)</label></li>
+        <li><label><input type="checkbox"> Speak with Dock</label></li>
+        <li><label><input type="checkbox"> Return to museum (get Flipturn from the closest grunt) and speak with Captain Stern</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; Aqua Grunt Back-to-Back on “Team Aqua” tab</span></li>
+        <li><label><input type="checkbox"> Head north from Slateport to Route 110, fighting mandatory trainers and your Rival</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; “Minibosses” and “Rivals” tabs</span></li>
+        <li><label><input type="checkbox"> You may optionally fight the trainers in the Beach House to get gifted a Charcadet</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; “Optional Bosses” tab</span></li>
+        <li><label><input type="checkbox"> Continue North to Mauville City</label></li>
+
+        <li><strong>Mauville City</strong></li>
+        <li><label><input type="checkbox"> Get the HM “Rock Smash”</label></li>
+        <li><label><input type="checkbox"> Get the Stat Editor (same house as Rock Smash HM)</label></li>
+        <li><label><input type="checkbox"> Get the Bike from the Bike Shop</label></li>
+        <li><label><input type="checkbox"> Acquire the Gift Pikachu in the Pokemon Center</label></li>
+        <li><label><input type="checkbox"> Get the Good Rod just outside of town on the East side/label></li>
+        <li><label><input type="checkbox"> You can optionally fight Fantina any time now, on route 117 (though you’ll have to fight through some mini-bosses).</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Sinnoh Leaders” tab</span></li>
+        <li><label><input type="checkbox"> Fight Wally in front of the Mauville Gym</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; “Rivals” tab</span></li>
+        <li><label><input type="checkbox"> Defeat Wattson in the Mauville Gym</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; “Heonn Leaders” tab</span></li>
+        <li><label><input type="checkbox"> Access the Game Corner and buy items!</label></li>
+        <li><label><input type="checkbox"> Exit town to the West to go through Route 117 to Verdanturf Town</label></li>
+      </ul>
+    </div>
+
+    <div class="tab-content flannery-content" id="flannery">
+      <ul class="checklist">
+        <li><strong>Verdanturf Town</strong></li>
+        <li><label><input type="checkbox"> Enter Rusturf Tunnel and clear the rocks with Rock Smash to get HM “Strength”</label></li>
+        <li><label><input type="checkbox"> Purchase Evolution items if you need them</label></li>
+        <li><label><input type="checkbox"> Return to Mauville City</label></li>
+
+        <li><strong>Mauville City</strong></li>
+        <li><label><input type="checkbox"> Exit the city to the North</label></li>
+        <li><label><input type="checkbox"> Fight Dawn on Route 111</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Rivals” tab</span></li>
+        <li><label><input type="checkbox"> Clear Route 111 and Route 112, culminating with Hiker Trent.</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Minibosses” tab</span></li>
+
+        <li><strong>Fiery Path</strong></li>
+        <li><label><input type="checkbox"> Continue through Fiery Path Northwards to Route 113</label></li>
+        <li><label><input type="checkbox"> Collect Lucario Egg after exiting Fiery Path in the house on Route 111</label></li>
+        <li><label><input type="checkbox"> Defeat the minibosses on Route 113 to get access to Fallarbor Town</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Minibosses” tab</span></li>
+
+        <li><strong>Fallarbor Town</strong></li>
+        <li><label><input type="checkbox"> Gain access to starter eggs!</label></li>
+        <li><label><input type="checkbox"> Exit town West to Route 114 and the snow bridge</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Sinnoh Leaders” tab</span></li>
+        <li><label><input type="checkbox"> Get the Bike from the Bike Shop</label></li>
+        <li><label><input type="checkbox"> Continue South on Route 114, navigating the mountainous path and heading west to Meteor Falls, where you’ll encounter a story cutscene with Team Magma</label></li>
+        <li><label><input type="checkbox"> Return to Mauville City</label></li>
+        
+        <li><strong>Mauville City</strong></li>
+        <li><label><input type="checkbox"> Return to the North path on Route 111, and go East when you get on the mountain, to the Cable Car</label></li>
+        <li><label><input type="checkbox"> Take the Cable Car up to the top of Mt. Chimney</label></li>
+        
+        <li><strong>Mt. Chimney</strong></li>
+        <li><label><input type="checkbox"> There are 3 boss battles here: Magma Double, Tabitha, and Maxie</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Team Magma” tab</span></li>
+        <li><label><input type="checkbox"> Take the Meteorite off the pedestal after defeating Maxie.</label></li>
+        <li><label><input type="checkbox"> You can now head to the South entrance of the mountain to go to Lavaridge Town</label></li>
+
+        <li><strong>Lavaridge Town</strong></li>
+        <li><label><input type="checkbox"> Get the gift Eevee</label></li>
+        <li><label><input type="checkbox"> Purchase a ton of TMs from the mart worker outside the Pokemart</label></li>
+        <li><label><input type="checkbox"> You can optionally fight Maylene just Northeast of town (in Jagged Pass)</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Sinnoh Leaders” tab</span></li>
+        <li><label><input type="checkbox"> Defeat Flannery in the Lavaridge Gym</li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Hoenn Leaders” tab</span></li>
+        <li><label><input type="checkbox"> Acquire the Mega Ring!</label></li>
+      </ul>
+    </div>
+
+    <div class="tab-content norman-content" id="norman">
+      <ul class="checklist">
+        <li><strong>(At this point, before/after Norman, you can go through Route 111 Desert, fight multiple minibosses in the Sand, and get HM “Surf”)</strong></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; “Minibosses” tab</span></li>
+        
+        <li><strong>Lavaridge Town</strong></li>
+        <li><label><input type="checkbox"> Return to Slateport City and exit North to Route 110</label></li>
+        
+        <li><strong>Route 110</strong></li>
+        <li><label><input type="checkbox"> Find Wally in front of the Trick House north of Slateport past the Bike Route and defeat him</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Rivals” tab</span></li>
+        <li><label><input type="checkbox"> Clear 3 floors of the Trick House</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Trick House” tab</span></li>
+        <li><label><input type="checkbox"> Return to Petalburg City</li>
+
+        <li><strong>Petalburg City</strong></li>
+        <li><label><input type="checkbox"> Clear Norman's Gym and face Gym Leader Norman</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Hoenn Leaders” tab</span></li>
+        <li><label><input type="checkbox"> Return to Mauville City</label></li>
+        <li><label><input type="checkbox"> You may also fight Wake, in the water on Route 118, just East of Mauville, optionally at any time now</li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Hoenn Leaders” tab</span></li>
+      </ul>
+    </div>
+
+    <div class="tab-content winona-content" id="winona">
+      <ul class="checklist">
+        <li><strong>Mauville City</strong></li>
+        <li><label><input type="checkbox"> Head East to Route 118, then North on Route 119</label></li>
+        <li><label><input type="checkbox"> Enter and clear the Weather Institute of Team Aqua</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Team Aqua” tab</span></li>
+        <li><label><input type="checkbox"> Return to Route 119 and defeat your Rival</li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Rivals” tab</span></li>
+        <li><label><input type="checkbox"> Proceed to Fortree City</li>
+
+        <li><strong>Fortree City</strong></li>
+        <li><label><input type="checkbox"> Go East to Route 120, and continue across the wooden bridge</label></li>
+        <li><label><input type="checkbox"> Speak with Steven to get the Devon Scope</label></li>
+        <li><label><input type="checkbox"> Return to Fortree City and fight Gym Leader Winona</li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Hoenn Leaders” tab</span></li>
+      </ul>
+    </div>
+
+    <div class="tab-content tate-content" id="tate">
+      <ul class="checklist">
+        <li><strong>Fortree City</strong></li>
+        <li><label><input type="checkbox"> Go East from Fortree through Route 120 into Route 121, where you'll fight some mandatory Rain battles</label></li>
+         <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Minibosses” tab</span></li>
+        <li><label><input type="checkbox"> You can optionally fight Byron on Route 121 at this point</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Sinnoh Leaders” tab</span></li>
+        <li><label><input type="checkbox"> You'll have a Team Aqua cutscene here</li>
+        <li><label><input type="checkbox"> Proceed to Lilycove City (to get a Fly checkpoint)</li>
+        <li><label><input type="checkbox"> Return to Route 121 and go South through Route 122 into Mt. Pyre</li>
+
+        <li><strong>Mt. Pyre</strong></li>
+        <li><label><input type="checkbox"> Go to the top of the <strong>outside</strong> of Mt. Pyre, to activate a cutscene with Maxie on Mt. Pyre Summit</label></li>
+        <li><label><input type="checkbox"> Return to Slateport City</label></li>
+
+        <li><strong>Slateport City</strong></li>
+        <li><label><input type="checkbox"> Go to the North side of Slateport to the Harbor, where you'll trigger a Team Aqua cutscene</label></li>
+        <li><label><input type="checkbox"> Make sure to go inside and watch Team Aqua escape</label></li>
+        <li><label><input type="checkbox"> Return to Lilycove City</li>
+
+        <li><strong>Lilycove City City</strong></li>
+        <li><label><input type="checkbox"> Defeat Dawn in the City</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Rivals” tab</span></li>
+        <li><label><input type="checkbox"> Go Northeast in Lilycove City to find Team Aqua’s Hideout at the northern side of the beach</label></li>
+        <li><label><input type="checkbox"> Defeat Team Aqua in their hideout</li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Team Aqua” tab</span></li>
+        <li><label><input type="checkbox"> Go East through Route 124 until you arrive at Mossdeep City. You’ll fight some sun battles here</li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Minibosses” tab</span></li>
+
+        <li><strong>Mossdeep City</strong></li>
+        <li><label><input type="checkbox"> Get the Super Rod</label></li>
+        <li><label><input type="checkbox"> Clear the Mossdeep Gym and challenge Leaders Tate & Liza</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Hoenn Leaders" tab</span></li>
+
+      </ul>
+    </div>
+
+    <div class="tab-content juan-content" id="juan">
+      <ul class="checklist">
+        <li><strong>Mossdeep City</strong></li>
+        <li><label><input type="checkbox"> Go East in Mossdeep City until you find the Space Center, where you'll have a cutscene with Steven and Drake inside</label></li>
+        <li><label><input type="checkbox"> Go to the West side of town to Steven's house to get HM “Dive”</label></li>
+        <li><label><input type="checkbox"> Return to Lavaridge Town</li>
+
+        <li><strong>Lavaridge Town</strong></li>
+        <li><label><input type="checkbox"> Head to the Jagged Pass and discover Team Magma's Hideout</label></li>
+        <li><label><input type="checkbox"> Clear the Team Magma hideout of enemy members, including a Back-to-Back and a final confrontation with Maxie</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Rivals” tab</span></li>
+        <li><label><input type="checkbox"> Return to Mossdeep City</label></li>
+
+        <li><strong>Mossdeep City</strong></li>
+        <li><label><input type="checkbox"> Head South through Route 127 and Route 128</label></li>
+        <li><label><input type="checkbox"> Use Dive to go Underwater on Route 128, to get to the Seafloor Cavern</label></li>
+
+        <li><strong>Seafloor Cavern</strong></li>
+        <li><label><input type="checkbox"> Defeat Team Aqua on the Seafloor Cavern</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Team Aqua” tab</span></li>
+        <li><label><input type="checkbox"> Return to Sootopolis City</label></li>
+        
+        <li><strong>Sootopolis City</strong></li>
+        <li><label><input type="checkbox"> There's a cutscene here that you need to watch</label></li>
+        <li><label><input type="checkbox"> Speak with Steven and go to the Cave of Origin</label></li>
+
+        <li><strong>Cave of Origin</strong></li>
+        <li><label><input type="checkbox"> Speak with Wallace, then go north of Route 131 to the Sky Pillar</label></li>
+       
+        <li><strong>Sky Pillar</strong></li>
+        <li><label><input type="checkbox"> Reach the top of Sky Pillar</label></li>
+        <li><label><input type="checkbox"> Defeat Drake to free Rayquaza</label></li>
+        <li><label><input type="checkbox"> Go back to Sootopolis City</label></li>
+
+        <li><strong>Sootopolis City</strong></li>
+        <li><label><input type="checkbox"> There will be a cutscene here</label></li>
+        <li><label><input type="checkbox"> Speak with Archie and Maxie to make them leave</label></li>
+        <li><label><input type="checkbox"> Speak with Wallace in front of the Sootopolis Gym to get HM “Waterfall”</li>
+        <li><label><input type="checkbox"> Clear the Sootopolis City gym, and challenge Leader Juan</li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Hoenn Leaders” tab</span></li>
+        <li><label><input type="checkbox"> Head to Route 128 and proceed East to Evergrande City</label></li>
+      </ul>
+    </div>
+
+    <div class="tab-content elite-content" id="elite">
+      <ul class="checklist">
+        <li><strong>Evergrande City - you're almost done!</strong></li>
+        <li><label><input type="checkbox"> Defeat your Rival in Evergrande City</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Rivals” tab</span></li>
+        <li><label><input type="checkbox"> Defeat Dawn in Evergrande City</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Rivals” tab</span></li>
+        <li><label><input type="checkbox"> You may also optionally challenge Volkner in Evergrande City</li>
+            <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Sinnoh Leaders” tab</span></li>
+        <li><label><input type="checkbox"> Go North to Victory Road and clear it</li>
+        <li><label><input type="checkbox"> Defeat Wally in Victory Road</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Rivals” tab</span></li>
+        <li><label><input type="checkbox"> Complete Victory Road and enter the Elite 4</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Victory Road” tab</span></li>
+        <li><label><input type="checkbox"> Defeat the Elite 4 and Champion</label></li>
+        <li><span class="note">&nbsp;&nbsp;&nbsp;&nbsp;&gt; "Elite 4" tab</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="js/walkthrough.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/script.js"></script>
+  
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-social">
+      <a href="https://discord.gg/JQtkfAWr" target="_blank" rel="noopener" aria-label="Discord">
+        <img src="assets/images/social links/Discord-Symbol-Light Blurple.png" alt="Discord" class="footer-icon">
+      </a>
+      <a href="https://www.reddit.com/r/EmeraldImperium/" target="_blank" rel="noopener" aria-label="Reddit">
+          <img src="assets/images/social links/Reddit_Icon_2Color.png" alt="Reddit" class="footer-icon">
+      </a>
+    </div>
+    <div class="footer-disclaimer">
+      All Pokémon content &copy; Nintendo, Game Freak, and The Pokémon Company. This is a fan project and we do not own any official material. <br>"Please Nintendo don't smite me, I beg of you" ~ iriv24, creator.
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
