@@ -1,0 +1,217 @@
+/* === IMPORT NES FONT === */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+
+/* === GLOBAL STYLES === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', monospace;
+  background-color: #f8f8f8;
+  color: #222;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* === HEADER === */
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  z-index: 1000;
+}
+
+.pokeball-icon {
+  position: relative;
+  margin-left: 10px;
+  width: 40px;
+}
+
+.pokeball-icon img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: #fff;
+  border: 2px solid #222;
+  padding: 8px;
+  width: 180px;
+  box-shadow: 4px 4px 0 #000;
+}
+
+.pokeball-icon:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 6px 4px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+/* === MAIN === */
+.main-container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* === LOGO === */
+.logo {
+  max-width: 600px;
+  width: 60vw;
+  height: auto;
+  display: block;
+  margin: 60px auto 40px auto;
+  image-rendering: pixelated;
+}
+
+/* === CONTENT LAYOUT === */
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Reduce from 4rem or more if set previously */
+  padding: 2rem 1rem; /* Slight horizontal padding */
+}
+
+/* === NAV LINKS === */
+.nav-links {
+  flex: 0 0 auto; /* Prevent growing and shrinking */
+  max-width: 300px;
+  text-align: left;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav-links ul li {
+  padding: 12px 0;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links ul li:hover {
+  color: #3c9;
+}
+
+.selector {
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url('../assets/images/pointer.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.nav-links ul li:hover .selector {
+  opacity: 1;
+}
+
+/* === PANELS WRAPPER (CENTER AND RIGHT) === */
+.scroll-panels {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-right: 20px;
+}
+
+/* === INDIVIDUAL PANELS === */
+.panel {
+  width: 200px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+  border: none;
+  image-rendering: pixelated;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 1s ease;
+}
+
+.trainer-panel,
+.pokemon-panel {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 auto; /* Prevent growing and shrinking */
+}
+
+
+.speech-bubble {
+  position: absolute;
+  top: 50%;
+  left: -180px; /* Adjust as needed */
+  transform: translateY(-50%);
+  background: #fff;
+  border: 2px solid #222;
+  padding: 8px 12px;
+  font-size: 0.75rem;
+  width: 150px;
+  color: #000;
+  box-shadow: 4px 4px 0 #000;
+  font-family: 'Press Start 2P', monospace;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.nav-links ul li:hover .speech-bubble {
+  opacity: 1;
+}

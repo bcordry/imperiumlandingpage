@@ -1,0 +1,75 @@
+body.dark-mode {
+  background: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url('../assets/images/snowy background2.png') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  color: #e0e0e0;
+}
+
+body.dark-mode .site-header {
+  background: #23272a;
+  border-bottom: 2px solid #444;
+}
+
+body.dark-mode .dropdown-menu {
+  background: #23272a;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+body.dark-mode .hof-table,
+body.dark-mode .patch-page,
+body.dark-mode .game-info-page {
+  background: transparent;
+  color: #e0e0e0;
+}
+
+body.dark-mode .hof-table th {
+  background: #2b8;
+  color: #fff;
+}
+
+body.dark-mode .hof-table td {
+  border-color: #444;
+}
+
+body.dark-mode .patch-download-btn,
+body.dark-mode .button {
+  background: #2b8;
+  color: #fff;
+}
+
+body.dark-mode .patch-download-btn:hover,
+body.dark-mode .button:hover {
+  background: #3c9;
+}
+
+body.dark-mode .quick-link {
+  background: #23272a;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+body.dark-mode .features li:before {
+  color: #2b8;
+}
+
+body.dark-mode .slideshow-container {
+  background: #23272a;
+}
+
+body.dark-mode .slide-caption {
+  background: rgba(30,30,30,0.7);
+  color: #fff;
+}
+
+body.dark-mode .patch-faq details {
+  background: #23272a;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+body.dark-mode .patch-faq summary {
+  color: #2b8;
+}
